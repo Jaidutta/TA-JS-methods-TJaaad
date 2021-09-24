@@ -18,10 +18,10 @@ console.log(`The index of the word "still" in message is ${message.indexOf("stil
 console.log(`The index of the word "answers" in message is ${message.indexOf("answers")}`);
 
 // Log true or false based on whether the word "answers" exist in message or not
-console.log(message.includes("answers"));
+console.log(message.indexOf("answers") !== -1);
 
 // Log true or false based on whether the word "they" exist in message or not
-console.log(message.includes("they"));
+console.log(message.indexOf("they") !== -1);
 
 // Log true or false based on whether the word "is" exist in message or not
 console.log(message.includes("is"));
@@ -30,7 +30,7 @@ console.log(message.includes("is"));
 console.log(message.includes("Is"));
 // Check and log whether the word from index 3 to 6 is "you" or not (use slice)
 
-console.log(message.slice(3, 7) === "you");
+console.log(message.slice(3, 6) === "you");
 
 // Check and log whether the word from index 7 to 8 is "a" or not
 console.log(message.slice(7, 8) === "a");
@@ -60,8 +60,7 @@ newMessage = newMessage.replace("thinking", "decide")
 console.log(newMessage);
 
 // Log all the characters from the message variable (you can user for..of loop on string)
-let messageCharArr = message.split("")
-for(let char of messageCharArr) {
+for(let char of message) {
   console.log(char);
 }
 
