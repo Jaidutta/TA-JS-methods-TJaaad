@@ -88,7 +88,8 @@ console.log(quote.lastIndexOf("a"));
 
 14. Find the second last index of letter "a" in quote.
 */
-console.log(quote.lastIndexOf("a", 30));
+let lastIndexOfA = quote.lastIndexOf("a")
+console.log(quote.lastIndexOf("a", lastIndexOfA - 1));
 
 /*
 15. Make the quote 70 character long. If it has less characters add rest as .......
@@ -123,7 +124,7 @@ console.log(LannisterTo);
 /*
 20. Make the quote of length 30 and put ... at the end. (use slice)
 */
-console.log(LannisterTo.slice(0));
+let limit = quote.slice(0, 30) + '...'
 /*
 21. Find out does quote, from, to starts with "A"
 */
